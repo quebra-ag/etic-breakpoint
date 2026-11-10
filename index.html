@@ -11,6 +11,14 @@
   <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* Ajustes de 10/11: jornada dos públicos em degraus com bases alinhadas */
+    .journey { align-items: stretch; }
+    .jr { display: flex; }
+    .jr-card { flex: 1; height: auto; margin-bottom: 0; margin-top: calc(108px - var(--lift)); }
+    @media (max-width: 980px) { .jr { display: block; } .jr-card { margin-top: 0; } }
+    .eco-core small { font-size: clamp(0.7rem, 0.6rem + 0.5vw, 0.95rem); letter-spacing: 0.08em; }
+  </style>
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -221,10 +229,10 @@
               <p class="lede">A Etic já identificou quatro públicos, mas atualmente a divulgação dos cursos é generalista. O próximo passo é se comunicar de maneira efetiva com cada um deles.</p>
             </div>
             <ol class="journey" data-stagger>
-              <li class="jr reveal"><div class="jr-base" aria-hidden="true"></div><article class="card jr-card"><div class="jr-step"><b>1</b><span></span></div><h4>Descoberta</h4><p class="jr-who">Residentes e estudantes</p><p>Público com agenda restrita e dependência de autorização para atividades externas. Podem conhecer a Etic antes de poder comprar cursos avançados, construindo relacionamento desde o início da formação.</p></article></li>
-              <li class="jr reveal"><div class="jr-base" aria-hidden="true"></div><article class="card jr-card"><div class="jr-step"><b>2</b><span></span></div><h4>Construção</h4><p class="jr-who">Início de carreira</p><p>Buscam cursos básicos e formação complementar enquanto definem a especialidade. Precisam ver a Etic como referência para sua formação.</p></article></li>
-              <li class="jr reveal"><div class="jr-base" aria-hidden="true"></div><article class="card jr-card"><div class="jr-step"><b>3</b><span></span></div><h4>Evolução</h4><p class="jr-who">Intermediários</p><p>Profissionais que buscam ampliar as áreas de atuação e identificar os cursos que fazem sentido para evoluir na carreira. Devem enxergar a Etic como a opção de evolução, encontrando oportunidades de ampliar a atuação profissional.</p></article></li>
-              <li class="jr reveal"><div class="jr-base" aria-hidden="true"></div><article class="card jr-card"><div class="jr-step"><b>4</b><span></span></div><h4>Aprofundamento</h4><p class="jr-who">Experientes e especialistas</p><p>Profissionais com interesses específicos, ligados às técnicas que executam. Precisam de comunicação qualificada e direcionada da ETIC, que sugira formações específicas e relevantes para cada profissional.</p></article></li>
+              <li class="jr reveal"><article class="card jr-card"><div class="jr-step"><b>1</b><span></span></div><h4>Descoberta</h4><p class="jr-who">Residentes e estudantes</p><p>Público com agenda restrita e dependência de autorização para atividades externas. Podem conhecer a Etic antes de poder comprar cursos avançados, construindo relacionamento desde o início da formação.</p></article></li>
+              <li class="jr reveal"><article class="card jr-card"><div class="jr-step"><b>2</b><span></span></div><h4>Construção</h4><p class="jr-who">Início de carreira</p><p>Buscam cursos básicos e formação complementar enquanto definem a especialidade. Precisam ver a Etic como referência para sua formação.</p></article></li>
+              <li class="jr reveal"><article class="card jr-card"><div class="jr-step"><b>3</b><span></span></div><h4>Evolução</h4><p class="jr-who">Intermediários</p><p>Profissionais que buscam ampliar as áreas de atuação e identificar os cursos que fazem sentido para evoluir na carreira. Devem enxergar a Etic como a opção de evolução, encontrando oportunidades de ampliar a atuação profissional.</p></article></li>
+              <li class="jr reveal"><article class="card jr-card"><div class="jr-step"><b>4</b><span></span></div><h4>Aprofundamento</h4><p class="jr-who">Experientes e especialistas</p><p>Profissionais com interesses específicos, ligados às técnicas que executam. Precisam de comunicação qualificada e direcionada da ETIC, que sugira formações específicas e relevantes para cada profissional.</p></article></li>
             </ol>
           </div>
 
@@ -235,12 +243,12 @@
             </div>
             <div class="eco reveal">
               <div class="eco-stage" role="img" aria-label="Ecossistema da Etic: no núcleo, o que a Etic já tem; na camada externa, o que a Etic quer ser; em órbita, a análise de mercado da Quebra.">
-                <div class="eco-ring eco-orbit"><span class="eco-label">Órbita · Análise de mercado</span><i class="eco-sat"></i><i class="eco-sat"></i><i class="eco-sat"></i></div>
-                <div class="eco-ring eco-outer"><span class="eco-label">Camada externa · O que quer ser</span></div>
+                <div class="eco-ring eco-orbit"><span class="eco-label">Análise de Mercado</span><i class="eco-sat"></i><i class="eco-sat"></i><i class="eco-sat"></i></div>
+                <div class="eco-ring eco-outer"><span class="eco-label">ETIC quer ser</span></div>
                 <div class="eco-arrows" aria-hidden="true">
                   <i style="--a:0deg"></i><i style="--a:45deg;--d:.3s"></i><i style="--a:90deg;--d:.6s"></i><i style="--a:135deg;--d:.9s"></i><i style="--a:180deg;--d:1.2s"></i><i style="--a:225deg;--d:1.5s"></i><i style="--a:270deg;--d:1.8s"></i><i style="--a:315deg;--d:2.1s"></i>
                 </div>
-                <div class="eco-ring eco-core"><div>ETIC<small>O que já tem</small></div></div>
+                <div class="eco-ring eco-core"><div>ETIC<small>já tem</small></div></div>
               </div>
               <div class="eco-legend">
                 <button class="card eco-item" type="button" data-layer="core">
